@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8A738458-0EC9-49A1-8C33-17530B5E58B4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp2</RootNamespace>
+    <AssemblyName>WindowsFormsApp2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EventForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EventForm.Designer.cs">
+      <DependentUpon>EventForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControlBlank.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlBlank.Designer.cs">
+      <DependentUpon>UserControlBlank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlDays.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlDays.Designer.cs">
+      <DependentUpon>UserControlDays.cs</DependentUpon>
+    </Compile>
+    <Compile Include="В ремонте.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="В ремонте.Designer.cs">
+      <DependentUpon>В ремонте.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Добавить_в_план.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Добавить_в_план.Designer.cs">
+      <DependentUpon>Добавить_в_план.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Добавить_в_производство.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Добавить_в_производство.Designer.cs">
+      <DependentUpon>Добавить_в_производство.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Добавить_в_ремонт.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Добавить_в_ремонт.Designer.cs">
+      <DependentUpon>Добавить_в_ремонт.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Добавление_СИ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Добавление_СИ.Designer.cs">
+      <DependentUpon>Добавление_СИ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Консервация.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Консервация.Designer.cs">
+      <DependentUpon>Консервация.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Операторы.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Операторы.Designer.cs">
+      <DependentUpon>Операторы.cs</DependentUpon>
+    </Compile>
+    <Compile Include="План.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="План.Designer.cs">
+      <DependentUpon>План.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ПослеРемонта.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ПослеРемонта.Designer.cs">
+      <DependentUpon>ПослеРемонта.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Производство.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Производство.Designer.cs">
+      <DependentUpon>Производство.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ремонт.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ремонт.Designer.cs">
+      <DependentUpon>Ремонт.cs</DependentUpon>
+    </Compile>
+    <Compile Include="СИ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="СИ.Designer.cs">
+      <DependentUpon>СИ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Списанный.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Списанный.Designer.cs">
+      <DependentUpon>Списанный.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="EventForm.resx">
+      <DependentUpon>EventForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UserControlBlank.resx">
+      <DependentUpon>UserControlBlank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlDays.resx">
+      <DependentUpon>UserControlDays.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="В ремонте.resx">
+      <DependentUpon>В ремонте.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Добавить_в_план.resx">
+      <DependentUpon>Добавить_в_план.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Добавить_в_производство.resx">
+      <DependentUpon>Добавить_в_производство.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Добавить_в_ремонт.resx">
+      <DependentUpon>Добавить_в_ремонт.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Добавление_СИ.resx">
+      <DependentUpon>Добавление_СИ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Консервация.resx">
+      <DependentUpon>Консервация.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Операторы.resx">
+      <DependentUpon>Операторы.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="План.resx">
+      <DependentUpon>План.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ПослеРемонта.resx">
+      <DependentUpon>ПослеРемонта.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Производство.resx">
+      <DependentUpon>Производство.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ремонт.resx">
+      <DependentUpon>Ремонт.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="СИ.resx">
+      <DependentUpon>СИ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Списанный.resx">
+      <DependentUpon>Списанный.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Word">
+      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
